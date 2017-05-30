@@ -25,7 +25,7 @@ define(["https://visualnuggets.github.io/account.js"], function (account) {
                 if (bezl.data.Accounts[i].ID == param1.ID) {
                     //bezl.data.Accounts[i].Tasks = param1.Tasks // Doesn't seem to be necessary
 
-                    var nextTaskDue = "";
+                    var nextTaskDue = "HERE";
                     for (var j = 0; j < bezl.data.Accounts[i].Tasks.length; j++) {
                         if (bezl.data.Accounts[i].Tasks[j].Complete == false) {
                             if (nextTaskDue == "") {
@@ -38,7 +38,7 @@ define(["https://visualnuggets.github.io/account.js"], function (account) {
                         }
                     }
 
-                    bezl.data.Accounts[i].NextTaskDue = nextTaskDue;
+                    bezl.data.Accounts[i].NextTaskDue = "HERE";//nextTaskDue;
                 }
             }
         });
