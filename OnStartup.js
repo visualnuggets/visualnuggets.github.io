@@ -1,4 +1,4 @@
-define(["https://visualnuggets.github.io/account.js"], function (account) {
+define(["./account.js"], function (account) {
  
     function OnStartup (bezl) {        
         bezl.vars.filterString = ""
