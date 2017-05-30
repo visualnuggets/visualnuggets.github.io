@@ -8,7 +8,7 @@ define(function () {
                 bezl.vars.loading = true; 
 
                 // Pull in the accounts list for the logged in user
-                bezl.dataService.add('Accounts','brdb','sales-rep-queries','ExecuteQuery', { 
+                bezl.dataService.add('Accounts','brdb','sales-rep-queries111','ExecuteQuery', { 
                     "QueryName": "GetAccounts",
                     "Parameters": [
                         { "Key": "EmailAddress", "Value": bezl.env.currentUser }
