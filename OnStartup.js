@@ -2,7 +2,7 @@ define(["https://visualnuggets.github.io/account.js"], function (account) {
  
     function OnStartup (bezl) {        
         bezl.vars.filterString = ""
-
+alert('testing');
         // Initiate the call to refresh the customer list
         account.runQuery(bezl, 'Accounts');
         account.runQuery(bezl, 'AccountContacts');
