@@ -4,11 +4,11 @@ define(["./account.js"], function (account) {
         bezl.vars.filterString = ""
 //TESTING
         // Initiate the call to refresh the customer list
-        account.runQuery(bezl, 'AccountsRF');
-        account.runQuery(bezl, 'AccountContactsRF');
+        account.runQuery(bezl, 'Accounts');
+        account.runQuery(bezl, 'AccountContacts');
         //account.runQuery(bezl, 'CRMCalls');
-        account.runQuery(bezl, 'TasksRF');
-        account.runQuery(bezl, 'AttachmentsRF');
+        account.runQuery(bezl, 'Tasks');
+        account.runQuery(bezl, 'Attachments');
 
         // Determine the current position of the user
         if (navigator.geolocation) {
