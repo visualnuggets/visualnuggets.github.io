@@ -182,7 +182,7 @@ define(function () {
     }
 
     function ClickAddress(bezl, account) {
-        window.open('http://maps.google.com/maps?q=' + account.AddressURL,'_blank');
+        window.open('http://maps.googleRF.com/maps?q=' + account.AddressURL,'_blank');
 
         var param = {
             "type": "navigate",
