@@ -2,7 +2,6 @@ define(function () {
  
     function RunQuery (bezl, queryName) {
 
-	    
         switch (queryName) {
             case "Accounts":
                 bezl.vars.loading = true; 
@@ -45,7 +44,6 @@ define(function () {
 
     function Select(bezl, account) {
         // Mark the selected customer as selected
-		alert('tested');
         for (var i = 0; i < bezl.data.Accounts.length; i++) {
             if (bezl.data.Accounts[i].ID == account.ID) {
                 bezl.data.Accounts[i].Selected = !bezl.data.Accounts[i].Selected;
