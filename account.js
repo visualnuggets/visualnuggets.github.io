@@ -1,7 +1,8 @@
 define(function () {
  
     function RunQuery (bezl, queryName) {
-
+alert('running');
+	    
         switch (queryName) {
             case "Accounts":
                 bezl.vars.loading = true; 
