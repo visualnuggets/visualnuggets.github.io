@@ -1,14 +1,14 @@
-define(["https://visualnuggets.github.io/account.js"], function (account) {
+define(["./account.js"], function (account) {
  
     function OnStartup (bezl) {        
         bezl.vars.filterString = ""
 //TESTING
         // Initiate the call to refresh the customer list
-        account.runQuery(bezl, 'Accounts');
-        account.runQuery(bezl, 'AccountContacts');
+        account.runQuery(bezl, 'AccountsRF');
+        account.runQuery(bezl, 'AccountContactsRF');
         //account.runQuery(bezl, 'CRMCalls');
-        account.runQuery(bezl, 'Tasks');
-        account.runQuery(bezl, 'Attachments');
+        account.runQuery(bezl, 'TasksRF');
+        account.runQuery(bezl, 'AttachmentsRF');
 
         // Determine the current position of the user
         if (navigator.geolocation) {
